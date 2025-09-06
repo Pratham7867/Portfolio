@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-based Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+
+    <!-- Page 1 -->
+
+
+    <section class="section">
+        <Nav>
+            <a class="links" href="https://github.com/Pratham7867"><i class="ri-github-line"></i>GitHub</a>
+            <a class="links" href="https://www.linkedin.com/in/pratham-gedam-b42a31275/"><i
+                    class="ri-linkedin-box-line"></i>Linkedin</a>
+            <h3 class="choice">Pick Your Favourite color👉</h3>
+            <a class="moveto" href="#about">About Me</a>
+            <a class="moveto" href="#projects">Projects</a>
+            <a class="moveto" href="#skills">Skills</a>
+            <a class="moveto" href="#contact">Contact Me</a>
+        </Nav>
+        <h1 class="responsive" id="h1">Hi,I am </h1>
+        <h1 class="responsive" id="h1">Pratham Gedam</h1>
+        <h3 class="responsive">I am <span id="typing"></span></h3>
+        <summary class="responsive">
+            <span></span>Detail-oriented and enthusiastic B.Tech Computer Science student with hands-on experience in
+            front-end
+            development and interactive
+            UI design. Skilled in React, Tailwind CSS, JavaScript, and modern animation libraries like GSAP and
+            ScrollTrigger. Completed multiple
+            projects involving API integration, responsive design, and real-world UI features. Experienced through
+            internships in building user-friendly
+            interfaces in collaborative environments. Eager to contribute to innovative tech teams and grow into a
+            well-rounded full-stack
+            developer
+        </summary>
+        <a class="a" href="/Pratham-Gedam-Resume.pdf" download>
+            <button>Download Resume</button>
+        </a>
+
+    </section>
+
+    <!-- Page 2 -->
+    <!-- <section id="info"> -->
+
+
+    <section class="intro" id="about">
+        <div class="container">
+            <h1>Hello 👋</h1>
+            <p>
+                I am a highly motivated <span>B.Tech Computer Science student</span> with a strong
+                interest in building modern, interactive web applications.
+            </p>
+            <p>
+                My expertise lies in <span>front-end development</span> ,
+                with practical experience using <span>React, Tailwind CSS, JavaScript</span>,
+                and animation frameworks like <span>GSAP</span> and <span>ScrollTrigger</span>.
+            </p>
+            <p>
+                Through internships and personal projects, I have developed a solid foundation
+                in responsive design, API integration, and crafting <span>user-centric interfaces</span>.
+                I thrive in collaborative environments and am expanding my skills toward full-stack development.
+            </p>
+            <p>
+                Beyond coding, I actively explore <span>AI tools</span> and
+                <span>prompt engineering</span> to drive innovation and efficiency in my workflow.
+            </p>
+            <p class="highlight">Always curious, always learning, always building. 🚀</p>
+        </div>
+    </section>
+    <!-- </section> -->
+    <!-- Page 3 -->
+    <section class="section" id="projects">
+        <!-- <h2>Porjects</h2> -->
+        <div class="grid" id="projectsGrid">
+            <div class="hover-highlight" id="hoverHighlight"></div>
+        </div>
+
+    </section>
+
+    <!-- Page 4 -->
+    <section class="section" id="skills">
+        <!-- <h2>skills</h2> -->
+    </section>
+
+    <!-- Page 5 -->
+    <section class="section"  id="contact">
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form action="https://getform.io/f/allqgjqa" method="POST" id="contactForm">
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+                <input type="email" name="email" id="email" placeholder="Your Email" required />
+                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="statusMessage"></p>
+        </section>
+    </section>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./animation.js"></script>
+</body>
+
+</html>
