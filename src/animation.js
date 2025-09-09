@@ -96,14 +96,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ✅ Animate .links once with gsap.from
 function animation() {
-  const tl = gsap.timeline({ defaults: { duration: 1, ease: "power3.out", opacity: 0 } });
+const tl = gsap.timeline({ defaults: { duration: 0.4, ease: "power3.out", opacity: 0 } });
 
-  tl.from(".links", { y: -100 })
-    .from(".moveto", { x: -50 }, "+=0.1")
-    .from("#h1", { x: -50 }, "+=0.1")   // delay between animations
-    .from("h3", { x: -50 }, "+=0.1")
-    .from("summary", { x: -50 }, "+=0.1")
-    .from("button", { x: -50 }, "+=0.1")
+tl.from(".links", { y: -100 })
+  .from(".moveto", { x: -50 }, "+=0.1")
+  .from("#h1", { x: -50 }, "+=0.1")
+  .from("h3", { x: -50 }, "+=0.1")
+  .from("summary", { x: -50 }, "+=0.1")
+  .from(".b", { x: -50 }, "+=0.1");
+
 
   gsap.from(".intro .container > *", {
     scrollTrigger: {

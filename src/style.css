@@ -285,7 +285,7 @@ section:nth-child(odd) {
 }
 
 .contact button:hover {
-  background: #2563eb;
+  background: #225fe1;
 }
 
 #statusMessage {
@@ -415,6 +415,10 @@ canvas.webgl {
   .contact button {
     width: 100%;
   }
+  #contact{
+    height: 0;
+    margin-top: -85vw;
+  }
 
   Nav {
     flex-wrap: wrap;
@@ -431,6 +435,9 @@ canvas.webgl {
   .moveto{
     display: none;
   }
+}
+#skill{
+  height: 0%;
 }
 
 /* 📱 Small Mobile (max 480px) */

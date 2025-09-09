@@ -299,7 +299,7 @@ function updateCamera() {
 
     camera.left   = -frustumSize * aspect / 2;
     camera.right  =  frustumSize * aspect / 2;
-    camera.top    =  frustumSize / 2;
+    camera.top    =  frustumSize / 3;
     camera.bottom = -frustumSize / 2;
     camera.updateProjectionMatrix();
 }
@@ -324,8 +324,8 @@ function handleResize() {
         // 📱 Mobile layout
         torus.position.set(0.5, 0, 0);
         cone.position.set(-0.7, -objectDistance * 0.7, 0);
-        torusKnot.position.set(0.7, -objectDistance * 1.8, 0);
-        icosahedron.position.set(0.7, -objectDistance * 3.2, 0);
+        torusKnot.position.set(0.7, -objectDistance * 1.6, 0);
+        icosahedron.position.set(0.7, -objectDistance * 2.9, 0);
         Sphere.position.y = -objectDistance *2.3;
         // Sphere.scale.set (0.1, 1, 40);
         
@@ -333,7 +333,7 @@ function handleResize() {
         // 💻 Desktop layout
         torus.position.set(2, 0, 0);
         cone.position.set(-2, -objectDistance * 0.9, 0);
-        torusKnot.position.set(2, -objectDistance * 1.8, 0);
+        torusKnot.position.set(2, -objectDistance * 1.7, 0);
         icosahedron.position.set(2, -objectDistance * 3.8, 0);
         Sphere.position.y = -objectDistance * 2.7;
     }
