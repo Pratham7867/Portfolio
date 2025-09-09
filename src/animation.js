@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Tala-Snack",
     description: "Tala Snack is a clone project built for learning purposes, focusing on front-end development and UI implementation.",
-    link: "https://tala-snack.vercel.app/"
+    link: "https://get-tala-two.vercel.app/"
   },
   {
     title: "3D Page",
