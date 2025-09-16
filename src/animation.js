@@ -183,6 +183,7 @@ form.addEventListener("submit", async (e) => {
   try {
     const response = await fetch(form.action, {
       method: "POST",
+      headers: { Accept: "application/json" }, // helps with mobile
       body: formData,
     });
 
@@ -191,14 +192,17 @@ form.addEventListener("submit", async (e) => {
       statusMessage.style.color = "green";
       form.reset();
     } else {
-      throw new Error("Failed to send");
+      statusMessage.innerText = "❌ Failed to send. Try again.";
+      statusMessage.style.color = "red";
     }
   } catch (error) {
-    statusMessage.innerText = "❌ Failed to send. Try again.";
+    statusMessage.innerText = "❌ Network error. Check connection.";
     statusMessage.style.color = "red";
   }
 });
 
+
+// amomation for typing effect
 const words = ["Web Developer", "Vibe Coder", "Prompt Engineer"];
 const typingElement = document.getElementById("typing");
 
