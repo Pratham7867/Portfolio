@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const resumeBtn = document.getElementById("downloadResume");
   if (resumeBtn) {
     resumeBtn.addEventListener("click", () => {
-      const resumeUrl = "/Pratham-Gedam-Resume.pdf"; // place in public/
+      const resumeUrl = "/Pratham_Gedam_Resume.pdf"; // place in public/
       const link = document.createElement("a");
       link.href = resumeUrl;
-      link.download = "Pratham-Resume.pdf";
+      link.download = "Pratham_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
